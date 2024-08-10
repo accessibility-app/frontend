@@ -7,7 +7,6 @@ import {
 import { FC, useEffect, useState } from "react";
 import { GOOGLE_API_KEY } from "../../details";
 import { GiPathDistance } from "react-icons/gi";
-import { BiTimer } from "react-icons/bi";
 import { FaSatelliteDish } from "react-icons/fa6";
 import { BsPersonWalking } from "react-icons/bs";
 import RadarLoading from "../../../lib/component/loader";
