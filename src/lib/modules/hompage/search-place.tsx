@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import { search } from '../../../utils/utils';
 import { places } from '../../data/places';
 
 const SearchPlace = () => {
+  const navigate = useNavigate();
   const [showResult, setShowResult] = useState(false);
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -53,9 +55,10 @@ const SearchPlace = () => {
             <div
               key={location.id}
               className='flex p-3 gap-2 hover:cursor-pointer hover:bg-[#2f2c2cce] hover:text-white'
+              onClick={() => navigate(`/place/${location.id}`)}
             >
               <img src={location.picture} className='w-[20%] rounded-md' />
-              <div class='flex flex-col'>
+              <div className='flex flex-col'>
                 <p>{location.name}</p>
                 <div className='flex gap-2'>
                   <small>Lng: {location.coordinates.longitude}</small>
