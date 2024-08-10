@@ -6,7 +6,7 @@ import AppLogo from "../lib/ui/logo-comp"
 const HomePage = () => {
   return (
     <div>
-      <div className="h-screen w-full home-bg p-4">
+      <div className="lg:h-screen w-full home-bg p-4">
         <div className="absolute top-4 lg:top-5 left-2 lg:left-4">
           <AppLogo />
         </div>

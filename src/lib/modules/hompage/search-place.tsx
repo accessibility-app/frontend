@@ -29,38 +29,40 @@ const SearchPlace = () => {
     };
   }, []);
   return (
-    <div className='relative z-20'>
-      <div className='w-[250px] lg:w-[300px]'>
+    <div className="relative z-20">
+      <div className="w-[250px] lg:w-[300px]">
         <div
           className={`w-full flex items-center gap-x-2 bg-gray-300 px-2 lg:px-6 ${
-            showResult ? 'rounded-t-full' : 'rounded-full'
+            showResult
+              ? "rounded-t-lg lg:rounded-t-full"
+              : "rounded-lg lg:rounded-full"
           }`}
         >
-          <FiSearch className='text-xl shrink-0' />
+          <FiSearch className="text-xl shrink-0" />
           <input
-            type='search'
-            placeholder='Search Locations'
+            type="search"
+            placeholder="Search Locations"
             onFocus={() => setShowResult(true)}
             onChange={handleSearch}
-            className='border-none outline-none bg-transparent p-2 w-full'
+            className="border-none outline-none bg-transparent p-2 w-full"
           />
         </div>
       </div>
       {showResult && (
         <div
           ref={divRef}
-          className='w-[250px] lg:w-[300px] overflow-y-auto h-[300px] bg-gray-300 rounded-b-lg'
+          className="w-[250px] lg:w-[300px] overflow-y-auto h-[300px] bg-gray-300 rounded-b-lg"
         >
           {locations.map((location) => (
             <div
               key={location.id}
-              className='flex p-3 gap-2 hover:cursor-pointer hover:bg-[#2f2c2cce] hover:text-white'
+              className="flex p-3 gap-2 hover:cursor-pointer hover:bg-[#2f2c2cce] hover:text-white"
               onClick={() => navigate(`/place/${location.id}`)}
             >
-              <img src={location.picture} className='w-[20%] rounded-md' />
-              <div className='flex flex-col'>
+              <img src={location.picture} className="w-[20%] rounded-md" />
+              <div className="flex flex-col">
                 <p>{location.name}</p>
-                <div className='flex gap-2'>
+                <div className="flex gap-2">
                   <small>Lng: {location.coordinates.longitude}</small>
                   <small>Lat: {location.coordinates.latitude}</small>
                 </div>
