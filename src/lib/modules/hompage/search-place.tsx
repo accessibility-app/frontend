@@ -55,7 +55,7 @@ const SearchPlace = () => {
               className='flex p-3 gap-2 hover:cursor-pointer hover:bg-[#2f2c2cce] hover:text-white'
             >
               <img src={location.picture} className='w-[20%] rounded-md' />
-              <div class='flex flex-col'>
+              <div className='flex flex-col'>
                 <p>{location.name}</p>
                 <div className='flex gap-2'>
                   <small>Lng: {location.coordinates.longitude}</small>
