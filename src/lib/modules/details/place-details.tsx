@@ -16,7 +16,7 @@ interface Props {
 const PlaceDetailsDisplay: FC<Props> = ({ data }) => {
   return (
     <div className="h-full">
-      <div className="h-[80vh]">
+      <div className="hidden lg:block h-[80vh]">
         <img
           src={data?.picture}
           alt=""

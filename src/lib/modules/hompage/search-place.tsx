@@ -30,7 +30,7 @@ const SearchPlace = () => {
   }, []);
   return (
     <div className='relative z-20'>
-      <div className='w-[300px]'>
+      <div className='w-[250px] lg:w-[300px]'>
         <div
           className={`w-full flex items-center gap-x-2 bg-gray-300 px-2 lg:px-6 ${
             showResult ? 'rounded-t-full' : 'rounded-full'
@@ -49,7 +49,7 @@ const SearchPlace = () => {
       {showResult && (
         <div
           ref={divRef}
-          className='w-[300px] overflow-y-auto h-[300px] bg-gray-300 rounded-b-lg'
+          className='w-[250px] lg:w-[300px] overflow-y-auto h-[300px] bg-gray-300 rounded-b-lg'
         >
           {locations.map((location) => (
             <div

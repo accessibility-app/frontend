@@ -18,8 +18,12 @@ const PlaceMapIndex: FC<Props> = ({ cords }) => {
   };
   return (
     <div className="w-full h-full">
-      {showState === "location" && <DisplayLocation cords={cord}/>}
-      {showState === "tracking" && <DisplayTracking />}
+      {showState === "location" && (
+        <DisplayLocation cords={cord} showView={setShowState} />
+      )}
+      {showState === "tracking" && (
+        <DisplayTracking cords={cord} showView={setShowState} />
+      )}
     </div>
   );
 };

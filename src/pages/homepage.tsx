@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="h-screen w-full home-bg p-4">
-        <div className="absolute top-5 left-4">
+        <div className="absolute top-4 lg:top-5 left-2 lg:left-4">
           <AppLogo />
         </div>
         <div className="absolute top-5 right-4">
