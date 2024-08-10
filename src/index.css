@@ -173,6 +173,10 @@
     background: #1679AB;
   }
 
+  .text-secondary {
+    color: #FFB1B1;
+  }
+
   .bg-secondary {
     background: #FFB1B1;
   }
@@ -264,7 +268,7 @@
   }
 
   .text-gradient {
-    background: -webkit-linear-gradient(50deg, #102C57 51.83%, #FFB1B1 100%);
+    background: -webkit-linear-gradient(50deg, #FFB1B1 51.83%, #102C57 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
