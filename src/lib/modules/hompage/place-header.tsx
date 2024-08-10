@@ -1,6 +1,6 @@
 const PlaceHeader = () => {
   return (
-    <div className="text-center text-white mb-6 lg:mb-12 mt-24 lg:mt-0">
+    <div className="text-center text-white mb-6 lg:mb-12 mt-24 md:mt-36 lg:mt-0">
       <p className="text-2xl syne lg:text-5xl fw-700">
         Your Ultimate Guide to University Spaces
       </p>
