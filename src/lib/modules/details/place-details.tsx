@@ -1,9 +1,22 @@
-import React from 'react'
+import { FC } from 'react'
 
-const PlaceDetails = () => {
+interface Props {
+  data: {
+    id: string;
+    name: string;
+    picture: any;
+    coordinates: {
+      latitude: number;
+      longitude: number;
+    };
+  } | undefined;
+}
+const PlaceDetailsDisplay:FC<Props> = ({}) => {
   return (
-    <div>PlaceDetails</div>
+    <div>
+        <div></div>
+    </div>
   )
 }
 
-export default PlaceDetails
+export default PlaceDetailsDisplay
