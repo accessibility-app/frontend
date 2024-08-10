@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { FaStreetView } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { places } from "../../data/places";
 
 register();
 
@@ -30,74 +31,31 @@ const PlaceSwiper = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        // autoplay={{ delay: 8000 }}
+        autoplay={{ delay: 8000 }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper pb-6"
       >
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <div>
-            <img
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
-              className="w-full h-[230px]"
-            />
-            <div className="bg-white h-[70px] p-2" onClick={() => navigate('/place/34566')}>
-              <p className="fw-600">Rectice Library</p>
-              <p className="flex gap-x-2 items-center text-primary cursor-pointer underline">
-                <FaStreetView  className="text-primary"/>
-                <span className="cursor-pointer">View</span>
-              </p>
+        {places.map((item) => (
+          <SwiperSlide className="w-[300px] h-[330px] bg-cover">
+            <div>
+              <img
+                src={item.picture}
+                className="w-full h-[230px] object-cover"
+              />
+              <div
+                className="bg-white h-[100px] p-2"
+                onClick={() => navigate(`/place/${item.id}`)}
+              >
+                <p className="fw-600">{item.name}</p>
+                <p className="flex gap-x-2 items-center text-primary cursor-pointer underline">
+                  <FaStreetView className="text-primary" />
+                  <span className="cursor-pointer">View</span>
+                </p>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-2.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-3.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-4.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-5.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-6.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-7.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-8.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="w-[300px] h-[300px] bg-cover">
-          <img
-            src="https://swiperjs.com/demos/images/nature-9.jpg"
-            className="w-full"
-          />
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
