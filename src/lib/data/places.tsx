@@ -21,7 +21,7 @@ export const places = [
     name: "Accessibility toilet 5th floor, SIWB",
     picture: toilet5,
     coordinates: {
-      latitude: 2.13353,
+      latitude: -2.13353,
       longitude: 57.11886,
     },
   },
@@ -30,7 +30,7 @@ export const places = [
     name: "Accessibility toilet 4th floor (Gents), SIWB",
     picture: toilet4,
     coordinates: {
-      latitude: 2.13467,
+      latitude: -2.13467,
       longitude: 57.11866,
     },
   },
@@ -39,7 +39,7 @@ export const places = [
     name: "Break out Space 4th Floor, SIWB",
     picture: space4,
     coordinates: {
-      latitude: 2.13361,
+      latitude: -2.13361,
       longitude: 57.11854,
     },
   },
@@ -48,7 +48,7 @@ export const places = [
     name: "Engineering processing & membranes, SIWB",
     picture: membrane,
     coordinates: {
-      latitude: 2.13483,
+      latitude: -2.13483,
       longitude: 57.11872,
     },
   },
@@ -57,7 +57,7 @@ export const places = [
     name: "Hallway to lobby 5th floor school of computing, SIWB",
     picture: computing5,
     coordinates: {
-      latitude: 2.13352,
+      latitude: -2.13352,
       longitude: 57.11881,
     },
   },
@@ -66,7 +66,7 @@ export const places = [
     name: "Ladies toilet 5th floor, SIWB",
     picture: ladies5,
     coordinates: {
-      latitude: 2.1336,
+      latitude: -2.1336,
       longitude: 57.11857,
     },
   },
@@ -75,7 +75,7 @@ export const places = [
     name: "Lift access on 4th floor, SIWB",
     picture: floor4,
     coordinates: {
-      latitude: 2.13458,
+      latitude: -2.13458,
       longitude: 57.11873,
     },
   },
@@ -84,7 +84,7 @@ export const places = [
     name: "Men toilet 4th floor, SIWB",
     picture: mens4,
     coordinates: {
-      latitude: 2.013357,
+      latitude: -2.013357,
       longitude: 57.11857,
     },
   },
@@ -93,7 +93,7 @@ export const places = [
     name: "N425 IT Support school of computing 4th Floor, SIWB",
     picture: compute4,
     coordinates: {
-      latitude: 2.13352,
+      latitude: -2.13352,
       longitude: 57.11873,
     },
   },
@@ -102,7 +102,7 @@ export const places = [
     name: "N404 Engineering electric stores, SIWB",
     picture: estore,
     coordinates: {
-      latitude: 2.13483,
+      latitude: -2.13483,
       longitude: 57.11872,
     },
   },
@@ -111,7 +111,7 @@ export const places = [
     name: "N529 PG Computing lab, SIWB",
     picture: computelab,
     coordinates: {
-      latitude: 2.13342,
+      latitude: -2.13342,
       longitude: 57.11877,
     },
   },
@@ -120,7 +120,7 @@ export const places = [
     name: "N530 multimedia lab, SIWB",
     picture: medialab,
     coordinates: {
-      latitude: 2.13339,
+      latitude: -2.13339,
       longitude: 57.11878,
     },
   },
@@ -129,7 +129,7 @@ export const places = [
     name: "N532 School of computing, SIWB",
     picture: n532compute,
     coordinates: {
-      latitude: 2.13346,
+      latitude: -2.13346,
       longitude: 57.11878,
     },
   },
@@ -138,7 +138,7 @@ export const places = [
     name: "N533, Foundation year lab, School of computing, SIWB",
     picture: n533lab,
     coordinates: {
-      latitude: 2.13306,
+      latitude: -2.13306,
       longitude: 57.11899,
     },
   },
@@ -147,7 +147,7 @@ export const places = [
     name: "SIWB, the sitting area outside",
     picture: area,
     coordinates: {
-      latitude: 2.13521,
+      latitude: -2.13521,
       longitude: 57.11917,
     },
   },
@@ -156,7 +156,7 @@ export const places = [
     name: "Walkway into SIWB",
     picture: walkway,
     coordinates: {
-      latitude: 2.13491,
+      latitude: -2.13491,
       longitude: 57.11862,
     },
   },

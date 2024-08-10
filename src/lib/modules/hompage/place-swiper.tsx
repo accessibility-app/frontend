@@ -37,14 +37,14 @@ const PlaceSwiper = () => {
         className='mySwiper pb-6'
       >
         {places.map((item) => (
-          <SwiperSlide className='w-[300px] h-[330px] bg-cover'>
+          <SwiperSlide className='w-[300px] h-[325px] bg-cover'>
             <div>
               <img
                 src={item.picture}
                 className='w-full h-[230px] object-cover'
               />
               <div
-                className='bg-white h-[100px] p-2'
+                className='bg-white h-[95px] p-2'
                 onClick={() => navigate(`/place/${item.id}`)}
               >
                 <p className='fw-600'>{item.name}</p>
