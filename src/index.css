@@ -329,8 +329,9 @@
         rgba(0, 0, 0, 0.9),
         rgba(0, 0, 0, 0.6)
       ),
-      url('https://res.cloudinary.com/diby6oigr/image/upload/v1723403805/WhatsApp_Image_2024-08-11_at_20.11.18_vk1981.jpg');
-    background-size: cover;
+      url('https://res.cloudinary.com/diby6oigr/image/upload/v1723403805/WhatsApp_Image_2024-08-11_at_20.11.18_vk1981.jpg')
+        center no-repeat;
+    background-size: 100%;
   }
   .call-btn {
     background: transparent !important;
