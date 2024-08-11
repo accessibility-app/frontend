@@ -3,13 +3,13 @@ import {
   GoogleMap,
   Marker,
   useJsApiLoader,
-} from "@react-google-maps/api";
-import { FC, useEffect, useState } from "react";
-import { GOOGLE_API_KEY } from "../../details";
-import { GiPathDistance } from "react-icons/gi";
-import { FaSatelliteDish } from "react-icons/fa6";
-import { BsPersonWalking } from "react-icons/bs";
-import RadarLoading from "../../../lib/component/loader";
+} from '@react-google-maps/api';
+import { FC, useEffect, useState } from 'react';
+import { GOOGLE_API_KEY } from '../../details';
+import { GiPathDistance } from 'react-icons/gi';
+import { FaSatelliteDish } from 'react-icons/fa6';
+import { BsPersonWalking } from 'react-icons/bs';
+import RadarLoading from '../../../lib/component/loader';
 
 interface Props {
   cords: {
@@ -36,7 +36,7 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
       maximumAge: 0,
     };
     if (!geolocationAPI) {
-      alert("Geolocation API is not available in your browser!");
+      alert('Geolocation API is not available in your browser!');
     } else {
       geolocationAPI.getCurrentPosition(
         (position) => {
@@ -50,7 +50,7 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
         (error) => {
           setIsBusy(false);
           console.log(error);
-          alert("Something went wrong getting your position!");
+          alert('Something went wrong getting your position!');
         },
         options
       );
@@ -70,8 +70,8 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
 
   //  tracking calculations
   const [directionResponse, setDirectionResponse] = useState<any>();
-  const [distance, setDistance] = useState<string | undefined>("");
-  const [duration, setDuration] = useState<string | undefined>("");
+  const [distance, setDistance] = useState<string | undefined>('');
+  const [duration, setDuration] = useState<string | undefined>('');
 
   const calculateDistance = async () => {
     const directionService = new google.maps.DirectionsService();
@@ -93,30 +93,31 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
 
   // get coords and update every 10 seconds
   useEffect(() => {
-     let interval = setInterval(getUserCoordinates, 10000);
+    let interval = setInterval(getUserCoordinates, 10000);
 
-     return () => {
-       //we return a "cleanup" function that will be called on unmount, since we've set an interval we also need to clear it later.
-       clearInterval(interval);
-     };
-  }, [])
+    return () => {
+      //we return a "cleanup" function that will be called on unmount, since we've set an interval we also need to clear it later.
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
-    <div className="relative w-full h-full">
-      {!lat || isBusy && (
-        <div className="w-full h-full place-center">
-          <RadarLoading />
-        </div>
-      )}
+    <div className='relative w-full h-full'>
+      {!lat ||
+        (isBusy && (
+          <div className='w-full h-full place-center'>
+            <RadarLoading />
+          </div>
+        ))}
       {isLoaded && lat && (
         <GoogleMap
           center={defaultProps.center}
           zoom={defaultProps.zoom}
           options={{
-            gestureHandling: "greedy",
+            gestureHandling: 'greedy',
             streetViewControl: true,
           }}
-          mapContainerStyle={{ width: "100%", height: "100%" }}
+          mapContainerStyle={{ width: '100%', height: '100%' }}
         >
           <Marker position={{ lat: cords.lat, lng: cords.lng }} />
           {directionResponse && (
@@ -124,7 +125,7 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
               directions={directionResponse}
               options={{
                 polylineOptions: {
-                  strokeColor: "blue",
+                  strokeColor: 'blue',
                   strokeOpacity: 60,
                   strokeWeight: 5,
                 },
@@ -134,21 +135,21 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
           )}
         </GoogleMap>
       )}
-      <div className="absolute grid gap-4 bottom-5 rounded-xl shadow-xl bg-white left-4 p-4 z-10">
-        <div className="flex items-center gap-x-4 ">
-          <GiPathDistance className="text-2xl text-primary" />
-          <p className="text-lg fw-500 text-primary">{distance}</p>
+      <div className='absolute grid gap-4 bottom-5 rounded-xl shadow-xl bg-white left-4 p-4 z-10'>
+        <div className='flex items-center gap-x-4 '>
+          <GiPathDistance className='text-2xl text-primary' />
+          <p className='text-lg fw-500 text-primary'>{distance}</p>
         </div>
-        <div className="flex items-center gap-x-4 ">
-          <BsPersonWalking className="text-2xl text-primary" />
-          <p className="text-lg fw-500 text-primary">{duration}</p>
+        <div className='flex items-center gap-x-4 '>
+          <BsPersonWalking className='text-2xl text-primary' />
+          <p className='text-lg fw-500 text-primary'>{duration}</p>
         </div>
         <div
-          className="flex items-center gap-x-4 cursor-pointer"
-          onClick={() => showView("location")}
+          className='flex items-center gap-x-4 cursor-pointer'
+          onClick={() => showView('location')}
         >
-          <FaSatelliteDish className="text-2xl text-primary" />
-          <p className="text-lg fw-500 text-primary">
+          <FaSatelliteDish className='text-2xl text-primary' />
+          <p className='text-lg fw-500 text-primary'>
             Switch to satellite view
           </p>
         </div>
