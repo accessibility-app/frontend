@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .syne {
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
 }
 
 .monts {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-@media (prefers-color-scheme: dark){
-  .css-14xmt93 >.ps-menu-button{
+@media (prefers-color-scheme: dark) {
+  .css-14xmt93 > .ps-menu-button {
     background: #0e1624 !important;
   }
 }
 
-.css-jn69v9{
+.css-jn69v9 {
   position: relative !important;
   top: -2px !important;
 }
-.css-1cuxlhl{
+.css-1cuxlhl {
   position: relative !important;
   top: -2px !important;
 }
-.css-12w9als{
+.css-12w9als {
   font-size: 14px !important;
 }
 
@@ -166,27 +166,27 @@
   }
 
   .text-pri {
-    color: #1679AB;
+    color: #1679ab;
   }
 
-  .bg-pri{
-    background: #1679AB;
+  .bg-pri {
+    background: #1679ab;
   }
 
   .text-secondary {
-    color: #FFB1B1;
+    color: #ffb1b1;
   }
 
   .bg-secondary {
-    background: #FFB1B1;
+    background: #ffb1b1;
   }
 
   .text-primary {
-    color: #102C57;
+    color: #102c57;
   }
 
   .bg-primary {
-    background: #102C57;
+    background: #102c57;
   }
 
   .bg-pri {
@@ -202,7 +202,7 @@
   }
 
   .btn-primary {
-    background: linear-gradient(90deg, #102C57 0%, #FFB1B1 100%);
+    background: linear-gradient(90deg, #102c57 0%, #ffb1b1 100%);
     color: white;
     font-weight: 500;
     border-radius: 50px;
@@ -214,7 +214,7 @@
     border-radius: 50px;
   }
   .btn-int {
-    background:  #102C57 ;
+    background: #102c57;
     color: white;
     font-weight: 500;
     border-radius: 6.75px;
@@ -229,13 +229,13 @@
 
   .btn-primary:hover,
   .btn-like:hover {
-    background: #102C57;
+    background: #102c57;
     transform: scaleX(1.02);
     transition: 0.6s;
   }
 
   .btn-feel:hover {
-    background: #102C57;
+    background: #102c57;
     transform: scaleX(1.02);
     transition: 0.6s;
     color: #fff;
@@ -264,18 +264,18 @@
   }
 
   .hero-bg {
-    background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1711971286/fantrip/Cover_1_yrsdvo.jpg");
+    background-image: url('https://res.cloudinary.com/greenmouse-tech/image/upload/v1711971286/fantrip/Cover_1_yrsdvo.jpg');
   }
 
   .text-gradient {
-    background: -webkit-linear-gradient(50deg, #FFB1B1 51.83%, #102C57 100%);
+    background: -webkit-linear-gradient(50deg, #ffb1b1 51.83%, #102c57 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .book-tab-border {
-    border: 3px solid #FFB1B1;
+    border: 3px solid #ffb1b1;
     box-shadow: 0px 4px 24.799999237060547px 0px #00000026;
   }
 
@@ -286,43 +286,53 @@
   .border-gradient {
     border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(90deg, #102C57 0%, #FFB1B1 100%) 1;
+    border-image: linear-gradient(90deg, #102c57 0%, #ffb1b1 100%) 1;
   }
 
   .border-gradient-line {
-    border-image: linear-gradient(90deg, #102C57 0%, #FFB1B1 100%) 1;
+    border-image: linear-gradient(90deg, #102c57 0%, #ffb1b1 100%) 1;
   }
 
   .bg-gradient {
-    background: linear-gradient(90deg, #102C57 0%, #FFB1B1 100%);
+    background: linear-gradient(90deg, #102c57 0%, #ffb1b1 100%);
   }
   .bg-layout-gradient {
     background: linear-gradient(86.78deg, #0e1624 1.8%, #2f1840 97.69%);
   }
   .bg-faq {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%),  url('/src/assets/images/resized-3.png');
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('/src/assets/images/resized-3.png');
     background-position: fixed;
   }
-  .footer-gradient{
-    background: linear-gradient(106.7deg, #341C5B 2.13%, #14131E 100%);
+  .footer-gradient {
+    background: linear-gradient(106.7deg, #341c5b 2.13%, #14131e 100%);
   }
-  .form-shadow{
+  .form-shadow {
     box-shadow: 0px 4px 26px 0px #00000021;
   }
-  .circle-shadow{
+  .circle-shadow {
     box-shadow: 0px 4px 4px 0px #00000040;
   }
-  .sidebar-shadow{
-    box-shadow: 0px 4px 73px 0px #0000000F;
+  .sidebar-shadow {
+    box-shadow: 0px 4px 73px 0px #0000000f;
   }
-  .logout-grad{
-    background: linear-gradient(128.49deg, #102C57 19.86%, #FFB1B1 68.34%);
+  .logout-grad {
+    background: linear-gradient(128.49deg, #102c57 19.86%, #ffb1b1 68.34%);
   }
-  .home-bg{
-    background: linear-gradient(118.49deg, rgba(0,0,0,.9), rgba(0,0,0,.6)), url('https://res.cloudinary.com/connecttoqadir/image/upload/v1690890341/edifyBlog/iikiod554e8qefuefxfc.webp');
+  .home-bg {
+    background: linear-gradient(
+        118.49deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('https://res.cloudinary.com/diby6oigr/image/upload/v1723403805/WhatsApp_Image_2024-08-11_at_20.11.18_vk1981.jpg');
     background-size: cover;
   }
-  .call-btn{
+  .call-btn {
     background: transparent !important;
     box-shadow: none !important;
     padding: 0 !important;
