@@ -19,6 +19,30 @@ import reception from '../../assets/images/SIWB Reception.jpeg';
 
 export const places = [
   {
+    id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
+    name: 'Lift access 3rd floor and staircase to floor 2 A/B',
+    decription:
+      'Lift access from 3rd floor (Level 3) to floor 1, 2 ,4 or 5. There is also a staircase available leading to floor 2A. This is located on the right side of the building walking in from the entrance of SIWB (3rd fllor)',
+    picture: liftfloor3,
+    extra: '3rd floor',
+    coordinates: {
+      latitude: -2.13466,
+      longitude: 57.11886,
+    },
+  },
+  {
+    id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
+    name: 'SIWB Reception',
+    decription:
+      'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mnatrap door and an accessibility door from the entrance',
+    picture: reception,
+    extra: '3rd floor',
+    coordinates: {
+      latitude: -2.13518,
+      longitude: 57.11874,
+    },
+  },
+  {
     id: '351b8e69-58d5-4e8d-8072-0cb731b00582',
     name: 'Accessibility toilet 5th floor, SIWB',
     picture: toilet5,
@@ -220,30 +244,6 @@ export const places = [
     coordinates: {
       latitude: -2.134917,
       longitude: 57.118611,
-    },
-  },
-  {
-    id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
-    name: 'Lift access 3rd floor and staircase to floor 2 A/B',
-    decription:
-      'Lift access from 3rd floor (Level 3) to floor 1, 2 ,4 or 5. There is also a staircase available leading to floor 2A. This is located on the right side of the building walking in from the entrance of SIWB (3rd fllor)',
-    picture: liftfloor3,
-    extra: '3rd floor',
-    coordinates: {
-      latitude: -2.13466,
-      longitude: 57.11886,
-    },
-  },
-  {
-    id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
-    name: 'SIWB Reception',
-    decription:
-      'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mnatrap door and an accessibility door from the entrance',
-    picture: reception,
-    extra: '3rd floor',
-    coordinates: {
-      latitude: -2.13518,
-      longitude: 57.11874,
     },
   },
 ];

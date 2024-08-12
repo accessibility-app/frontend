@@ -2,7 +2,7 @@ const PlaceHeader = () => {
   return (
     <div className='text-center text-white mb-6 lg:mb-12 mt-24 md:mt-36 lg:mt-0'>
       <p className='text-2xl syne lg:text-5xl fw-700 lg:w-10/12 mx-auto'>
-        Your Guide to the RGU Spaces
+        Your Guide to the School of Computing, RGU Spaces
       </p>
       <p className='lg:w-9/12 mx-auto mt-3'>
         Navigating the sprawling university campus has never been easier!{' '}
