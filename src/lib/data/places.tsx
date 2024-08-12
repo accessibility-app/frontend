@@ -32,7 +32,7 @@ export const places = [
     },
   },
   {
-    id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
+    id: 'aa9862e7-cdc2-4240-b2f7-f174e2594431',
     name: 'SIWB Reception',
     description:
       'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mnatrap door and an accessibility door from the entrance',
