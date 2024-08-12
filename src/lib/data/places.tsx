@@ -16,12 +16,13 @@ import area from '../../assets/images/SIWB, the Sitting Area outside.jpeg';
 import walkway from '../../assets/images/Walkway into SIWB.jpeg';
 import liftfloor3 from '../../assets/images/Lift access 3rd floor and staircase to floor 2 A_B.jpeg';
 import reception from '../../assets/images/SIWB Reception.jpeg';
+import library from '../../assets/images/Library access on 5th floor, SIWB.jpeg';
 
 export const places = [
   {
     id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
     name: 'Lift access 3rd floor and staircase to floor 2 A/B',
-    decription:
+    description:
       'Lift access from 3rd floor (Level 3) to floor 1, 2 ,4 or 5. There is also a staircase available leading to floor 2A. This is located on the right side of the building walking in from the entrance of SIWB (3rd fllor)',
     picture: liftfloor3,
     extra: '3rd floor',
@@ -33,7 +34,7 @@ export const places = [
   {
     id: '009a21bc-3e04-42dc-b0b6-45326e8505e5',
     name: 'SIWB Reception',
-    decription:
+    description:
       'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mnatrap door and an accessibility door from the entrance',
     picture: reception,
     extra: '3rd floor',
@@ -43,15 +44,15 @@ export const places = [
     },
   },
   {
-    id: '351b8e69-58d5-4e8d-8072-0cb731b00582',
-    name: 'Accessibility toilet 5th floor, SIWB',
-    picture: toilet5,
+    id: '9d72dca6-c616-468c-93a8-f9d977eb99ae',
+    name: 'Library access on 5th floor, SIWB',
+    picture: library,
     description:
-      'Designed to meet the needs of people with disabilities. Door opens outwards with wider entry for a wheelchair user. Presence of grab bars for positioning and stablilty. Clear signage on entrance. Toilet paper placed within easy reach. Available emergency pull cord',
+      'Library on 5th floor, SIWB. it can be accessed via NSL09 lift or via a staircase from any floor on SIWB. There is a main door and accessibility door entrance. It also serves a link to other levels (6,7,8 9/N9). Current opening times are Mon-Thurs: 0900-2100, Fri: 09-1700, Sat: 1300  - 1700, Sun: 1100-1800',
     extra: '5th floor',
     coordinates: {
-      latitude: -2.13353,
-      longitude: 57.11886,
+      latitude: -2.13471,
+      longitude: 57.11876,
     },
   },
   {
