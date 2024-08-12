@@ -22,14 +22,13 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: GOOGLE_API_KEY,
   });
-  const [isBusy, setIsBusy] = useState(false);
+
   const [{ lat, lon }, setCordss] = useState({
     lat: 0,
     lon: 0,
   });
   const geolocationAPI = navigator.geolocation;
   const getUserCoordinates = () => {
-    setIsBusy(true);
     const options = {
       enableHighAccuracy: true,
       timeout: Infinity,
@@ -45,10 +44,8 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
             lat: coords.latitude,
             lon: coords.longitude,
           });
-          setIsBusy(false);
         },
         (error) => {
-          setIsBusy(false);
           console.log(error);
           alert('Something went wrong getting your position!');
         },
@@ -103,12 +100,11 @@ const DisplayTracking: FC<Props> = ({ cords, showView }) => {
 
   return (
     <div className='relative w-full h-full'>
-      {!lat ||
-        (isBusy && (
+      {!lat && (
           <div className='w-full h-full place-center'>
             <RadarLoading />
           </div>
-        ))}
+        )}
       {isLoaded && lat && (
         <GoogleMap
           center={defaultProps.center}
