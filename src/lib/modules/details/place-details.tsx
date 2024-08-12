@@ -24,7 +24,7 @@ const PlaceDetailsDisplay: FC<Props> = ({ data }) => {
           className="h-full w-full object-cover object-center"
         />
       </div>
-      <div className="h-[30vh] p-3 bg-pri overflow-y-auto">
+      <div className="h-[20vh] lg:h-[30vh] p-3 bg-pri overflow-y-auto">
         <p className="text-xl fw-500">{data?.name}</p>
         <p className="mt-2">{data?.description}.</p>
         <p className="flex gap-x-2 mt-2">
