@@ -48,7 +48,7 @@ export const places = [
     name: 'Library access on 5th floor, SIWB',
     picture: library,
     description:
-      'Library on 5th floor, SIWB. it can be accessed via NSL09 lift or via a staircase from any floor on SIWB. There is a main door and accessibility door entrance. It also serves a link to other levels (6,7,8 9/N9). Current opening times are Mon-Thurs: 0900-2100, Fri: 09-1700, Sat: 1300  - 1700, Sun: 1100-1800',
+      'Library on 5th floor, SIWB. it can be accessed via NSL09 lift or via a staircase from any floor on SIWB. There is a main door and accessibility door entrance. It also serves a link to other levels (6,7,8 9/N9). Current opening times are Mon-Thurs: 0900-2100, Fri: 0900-1700, Sat: 1300  - 1700, Sun: 1100-1800',
     extra: '5th floor',
     coordinates: {
       latitude: -2.13471,
@@ -155,7 +155,7 @@ export const places = [
     id: 'fb29f5b6-90a8-4a54-a012-b6e1fb3711e0',
     name: 'N425 IT Support school of computing 4th Floor, SIWB',
     description:
-      'Entrance to School of Computing IT support office for general enquiries and and related enquiries about system issues, support or troubleshootings. It is open to students and staff. ',
+      'Entrance to School of Computing IT support office for general enquiries and and related enquiries about system issues, support or troubleshootings. It is open to students and staff. It is accessible via lift/stairs from the hallway on floor 3 upto floor 4.',
     picture: compute4,
     extra: '4th floor',
     coordinates: {
