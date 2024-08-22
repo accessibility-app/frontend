@@ -35,7 +35,7 @@ export const places = [
     id: 'aa9862e7-cdc2-4240-b2f7-f174e2594431',
     name: 'SIWB Reception',
     description:
-      'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mnatrap door and an accessibility door from the entrance',
+      'SIWB reception. It serves as a help point for students, staff, visitors, deliveries or general guidance on about the faculty and the school at large. It is accessible via the three (3) Mantraps door and an accessibility door from the entrance',
     picture: reception,
     extra: '3rd floor',
     coordinates: {
@@ -238,7 +238,7 @@ export const places = [
   {
     id: '7c06aa92-aecd-4bf2-855d-412859c34b7a',
     name: 'Walkway into SIWB',
-    decription:
+    description:
       'This is a walkway after the reception. It has a Galicia vinyl floor finish with grey patches. There are display boards information on the sides. I also serves as an entrance to lift access, staircase, changing room, toilets and most lecture and staff rooms',
     picture: walkway,
     extra: '3rd floor',
